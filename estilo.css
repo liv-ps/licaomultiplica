@@ -1,0 +1,346 @@
+
+/* =========================================================
+   ESTILO GERAL DA PÁGINA
+   ========================================================= */
+
+/* Define as configurações gerais de todos os elementos. */
+* {
+    /* Faz com que padding e border sejam incluídos no tamanho total do elemento.
+       Conceito: box-sizing facilita o controle das dimensões. */
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo inteiro da página. */
+body {
+    /* Define a fonte principal utilizada no site.
+       Conceito: font-family determina o tipo de letra. */
+    font-family: Arial, sans-serif;
+
+    /* Define a cor de fundo da página.
+       Conceito: background-color altera a cor atrás dos elementos. */
+    background-color: #F3F4F6;
+
+    /* Remove a margem padrão criada pelo navegador.
+       Conceito: margin controla o espaço externo de um elemento. */
+    margin: 0;
+
+    /* Define um espaço interno ao redor do conteúdo.
+       Conceito: padding controla o espaço entre o conteúdo e a borda. */
+    padding: 30px;
+
+    /* Define a cor padrão dos textos.
+       Conceito: color altera a cor das letras. */
+    color: #0B2D5C;
+}
+
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+   ========================================================= */
+
+/* Estiliza o título principal do site. */
+h1 {
+    /* Define a cor azul escura do título. */
+    color: #1E3A8A;
+
+    /* Centraliza o texto horizontalmente. */
+    text-align: center;
+
+    /* Define o tamanho da fonte do título. */
+    font-size: 36px;
+
+    /* Cria espaço abaixo do título.
+       Conceito: margin controla o espaço externo. */
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   PARÁGRAFO DE INTRODUÇÃO
+   ========================================================= */
+
+/* Estiliza os parágrafos da página. */
+p {
+    /* Define o tamanho dos textos. */
+    font-size: 17px;
+
+    /* Define o espaço entre as linhas.
+       Conceito: line-height melhora a leitura de textos. */
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CARTÕES DE CONTEÚDO
+   ========================================================= */
+
+/* Estiliza cada elemento que possui a classe "card". */
+.card {
+    /* Define o fundo branco dos cartões.
+       Conceito: background-color altera a cor de fundo. */
+    background-color: #FFFFFF;
+
+    /* Cria espaço interno entre o conteúdo e a borda do cartão.
+       Conceito: padding é o espaço interno. */
+    padding: 25px;
+
+    /* Cria espaço externo entre os cartões.
+       Conceito: margin é o espaço externo do elemento. */
+    margin: 25px auto;
+
+    /* Define uma largura máxima para o cartão.
+       Conceito: max-width impede que o elemento fique largo demais. */
+    max-width: 700px;
+
+    /* Adiciona uma borda azul clara ao cartão.
+       Conceito: border cria uma linha ao redor do elemento. */
+    border: 2px solid #3B82F6;
+
+    /* Arredonda os cantos do cartão.
+       Conceito: border-radius cria cantos arredondados. */
+    border-radius: 15px;
+
+    /* Adiciona uma pequena sombra ao redor do cartão.
+       Conceito: box-shadow cria profundidade visual. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Estiliza os subtítulos dos cartões. */
+.card h2 {
+    /* Define a cor azul principal dos subtítulos. */
+    color: #1E3A8A;
+
+    /* Define o tamanho do subtítulo. */
+    font-size: 24px;
+
+    /* Remove o espaço superior padrão do h2. */
+    margin-top: 0;
+
+    /* Cria espaço abaixo do subtítulo. */
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   IMAGENS DOS CARTÕES
+   ========================================================= */
+
+/* Estiliza as imagens existentes dentro dos cartões. */
+.card img {
+    /* Faz a imagem ocupar toda a largura disponível do cartão. */
+    width: 100%;
+
+    /* Impede que a imagem fique maior que o próprio cartão. */
+    max-width: 300px;
+
+    /* Mantém a proporção da imagem. */
+    height: auto;
+
+    /* Faz a imagem ficar centralizada.
+       Conceito: margin auto distribui automaticamente o espaço lateral. */
+    display: block;
+    
+    /* Cria espaço acima e abaixo da imagem. */
+    margin: 20px auto;
+
+    /* Arredonda os cantos da imagem. */
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+/* Aplica estilo aos dois tipos de botão do cartão. */
+button {
+    /* Remove a borda padrão do navegador. */
+    border: none;
+
+    /* Cria espaço interno dentro do botão. */
+    padding: 12px 18px;
+
+    /* Define o tamanho da fonte do botão. */
+    font-size: 16px;
+
+    /* Arredonda os cantos do botão. */
+    border-radius: 8px;
+
+    /* Faz o cursor virar uma mão ao passar sobre o botão.
+       Conceito: cursor altera o formato do cursor do mouse. */
+    cursor: pointer;
+
+    /* Cria espaço entre os botões. */
+    margin: 5px;
+}
+
+
+/* Estiliza o botão "Saiba mais". */
+.btn-modal {
+    /* Define a cor de fundo do botão. */
+    background-color: #1E3A8A;
+
+    /* Define a cor branca do texto. */
+    color: #FFFFFF;
+}
+
+
+/* Altera o botão "Saiba mais" quando o mouse passa sobre ele.
+   Conceito: :hover é uma pseudo-classe usada para interações com o mouse. */
+.btn-modal:hover {
+    /* Deixa o azul um pouco mais escuro durante o hover. */
+    background-color: #16306F;
+}
+
+
+/* Estiliza o botão de curtida. */
+.btn-like {
+    /* Define a cor de fundo do botão de curtida. */
+    background-color: #3B82F6;
+
+    /* Define a cor branca do texto. */
+    color: #FFFFFF;
+}
+
+
+/* Altera a aparência do botão de curtida ao passar o mouse. */
+.btn-like:hover {
+    /* Escurece a cor do botão durante o hover. */
+    background-color: #2563EB;
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+/* Estiliza a janela que ocupará a tela quando o modal for aberto. */
+.modal {
+    /* Faz o modal ficar fixo em relação à janela do navegador.
+       Conceito: position: fixed mantém o elemento preso à tela. */
+    position: fixed;
+
+    /* Faz o modal começar no topo da tela. */
+    top: 0;
+
+    /* Faz o modal começar no lado esquerdo da tela. */
+    left: 0;
+
+    /* Faz o modal ocupar 100% da largura da tela. */
+    width: 100%;
+
+    /* Faz o modal ocupar 100% da altura da tela. */
+    height: 100%;
+
+    /* Cria um fundo escuro e parcialmente transparente.
+       Conceito: rgba permite definir uma cor com transparência. */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Centraliza o conteúdo interno do modal. */
+    display: flex;
+
+    /* Centraliza o conteúdo verticalmente. */
+    align-items: center;
+
+    /* Centraliza o conteúdo horizontalmente. */
+    justify-content: center;
+
+    /* Coloca o modal acima dos demais elementos.
+       Conceito: z-index controla a ordem de sobreposição. */
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   CLASSE PARA OCULTAR O MODAL
+   ========================================================= */
+
+/* A classe "hidden" será usada futuramente pelo JavaScript
+   para esconder o modal até que o usuário clique em "Saiba mais". */
+.hidden {
+    /* display: none remove o elemento da área visível da página.
+       Conceito: display: none oculta completamente o elemento. */
+    display: none;
+}
+
+
+/* =========================================================
+   CONTEÚDO INTERNO DO MODAL
+   ========================================================= */
+
+/* Estiliza a caixa branca que fica dentro do modal. */
+.modal-content {
+    /* Define o fundo branco da janela. */
+    background-color: #FFFFFF;
+
+    /* Define o espaço interno da janela. */
+    padding: 30px;
+
+    /* Define uma largura máxima para o conteúdo. */
+    max-width: 600px;
+
+    /* Faz a caixa ocupar até 90% da largura disponível. */
+    width: 90%;
+
+    /* Arredonda os cantos da janela. */
+    border-radius: 15px;
+
+    /* Centraliza o texto dentro da janela. */
+    text-align: center;
+
+    /* Cria uma sombra ao redor do modal. */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    /* Permite posicionar o botão de fechar em relação a esta caixa.
+       Conceito: position: relative cria um ponto de referência
+       para elementos com position: absolute. */
+    position: relative;
+}
+
+
+/* Estiliza o título dentro do modal. */
+.modal-content h3 {
+    /* Define a cor do título do modal. */
+    color: #1E3A8A;
+
+    /* Define o tamanho do título. */
+    font-size: 26px;
+
+    /* Remove a margem superior padrão. */
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   BOTÃO "X" PARA FECHAR O MODAL
+   ========================================================= */
+
+/* Estiliza o elemento span que funciona como botão de fechar. */
+.close-btn {
+    /* Posiciona o botão em relação ao .modal-content.
+       Conceito: position: absolute permite definir a posição exata. */
+    position: absolute;
+
+    /* Define a distância do botão em relação ao topo. */
+    top: 10px;
+
+    /* Define a distância do botão em relação ao lado direito. */
+    right: 18px;
+
+    /* Aumenta o tamanho do símbolo "X". */
+    font-size: 30px;
+
+    /* Define a cor do botão de fechar. */
+    color: #1E3A8A;
+
+    /* Faz o cursor aparecer como uma mão. */
+    cursor: pointer;
+}
+
+
+/* Altera o botão de fechar quando o mouse passa sobre ele. */
+.close-btn:hover {
+    /* Muda a cor do "X" durante o hover. */
+    color: #3B82F6;
+}
